@@ -295,6 +295,13 @@
                 by security researchers uses the PSL as a means to aggregate domain listings
                 sourced from Alexa, Majestic and Cisco Umbrella.
             </li>
+            <li>
+                Network firewalls and cloud security gateways use the PSL to validate wildcard 
+                domain patterns in egress filtering. By checking wildcards against the PSL, these 
+                systems prevent overly broad patterns like <code>*.github.io</code> that would 
+                span multiple untrusted parties, while allowing safe wildcards like 
+                <code>*.github.com</code> for controlled egress allowlisting.
+            </li>
         </ul>
     </section>
 
