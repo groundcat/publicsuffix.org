@@ -128,6 +128,12 @@
         <p>
             <a href="https://github.com/crawler-commons/crawler-commons">Crawler-Commons</a> is a suite of tools for building a web crawler, and it uses the PSL.
         </p>
+        <p>
+            Network firewalls (e.g., <a href="https://chasersystems.com/">Chaser Systems</a>) 
+            use the PSL to validate wildcard patterns in egress filtering, preventing 
+            overly broad allowlists like <code>*.github.io</code> while permitting 
+            safe wildcards like <code>*.github.com</code>.
+        </p>
 
         <h3>
             Libraries
@@ -294,13 +300,6 @@
                 The <a href="https://tranco-list.eu/">Tranco</a> service that is widely used
                 by security researchers uses the PSL as a means to aggregate domain listings
                 sourced from Alexa, Majestic and Cisco Umbrella.
-            </li>
-            <li>
-                Network firewalls and cloud security gateways use the PSL to validate wildcard 
-                domain patterns in egress filtering. By checking wildcards against the PSL, these 
-                systems prevent overly broad patterns like <code>*.github.io</code> that would 
-                span multiple untrusted parties, while allowing safe wildcards like 
-                <code>*.github.com</code> for controlled egress allowlisting.
             </li>
         </ul>
     </section>
